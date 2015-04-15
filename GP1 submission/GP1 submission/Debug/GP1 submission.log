@@ -1,8 +1,20 @@
-﻿Build started 15/04/2015 04:02:44.
+﻿Build started 15/04/2015 04:52:25.
      1>Project "C:\Users\Ryan\Documents\GitHub\GP1---SUBMISSION\GP1 submission\GP1 submission\GP1 submission.vcxproj" on node 2 (Build target(s)).
      1>ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt main.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt cAsteroid.cpp main.cpp menu.cpp
+         menu.cpp
          main.cpp
+         cAsteroid.cpp
+     1>c:\users\ryan\documents\github\gp1---submission\gp1 submission\gp1 submission\casteroid.cpp(27): warning C4244: 'argument' : conversion from 'int' to 'GLfloat', possible loss of data
+     1>c:\users\ryan\documents\github\gp1---submission\gp1 submission\gp1 submission\casteroid.cpp(29): warning C4244: 'argument' : conversion from 'int' to 'GLfloat', possible loss of data
+     1>c:\users\ryan\documents\github\gp1---submission\gp1 submission\gp1 submission\casteroid.cpp(31): warning C4244: 'argument' : conversion from 'int' to 'GLfloat', possible loss of data
+     1>c:\users\ryan\documents\github\gp1---submission\gp1 submission\gp1 submission\casteroid.cpp(33): warning C4244: 'argument' : conversion from 'int' to 'GLfloat', possible loss of data
+     1>c:\users\ryan\documents\github\gp1---submission\gp1 submission\gp1 submission\casteroid.cpp(86): warning C4244: 'argument' : conversion from 'LONG' to 'GLfloat', possible loss of data
+     1>c:\users\ryan\documents\github\gp1---submission\gp1 submission\gp1 submission\casteroid.cpp(97): warning C4244: 'argument' : conversion from 'LONG' to 'GLfloat', possible loss of data
+     1>c:\users\ryan\documents\github\gp1---submission\gp1 submission\gp1 submission\casteroid.cpp(98): warning C4244: 'argument' : conversion from 'LONG' to 'GLfloat', possible loss of data
+     1>c:\users\ryan\documents\github\gp1---submission\gp1 submission\gp1 submission\casteroid.cpp(99): warning C4244: 'argument' : conversion from 'LONG' to 'GLfloat', possible loss of data
+     1>c:\users\ryan\documents\github\gp1---submission\gp1 submission\gp1 submission\casteroid.cpp(100): warning C4244: 'argument' : conversion from 'LONG' to 'GLfloat', possible loss of data
+         Generating Code...
        Link:
          C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Ryan\Documents\GitHub\GP1---SUBMISSION\GP1 submission\Debug\GP1 submission.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\Ryan\Documents\GitHub\GP1---SUBMISSION\GP1 submission\Debug\GP1 submission.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Ryan\Documents\GitHub\GP1---SUBMISSION\GP1 submission\Debug\GP1 submission.lib" /MACHINE:X86 Debug\asteroidsGame.obj
          Debug\cAsteroid.obj
@@ -32,4 +44,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:01.91
+Time Elapsed 00:00:03.97
