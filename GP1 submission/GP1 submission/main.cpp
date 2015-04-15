@@ -135,6 +135,7 @@ int WINAPI WinMain(HINSTANCE hInstance,
 	rocketSprite.attachSoundMgr(theSoundMgr);
 
 	bool end = false;
+	int aLeft = 5;
 
 	cTexture endBkTexture = cTexture("Images\\endScreen.png");
 	cBkGround endBk;
@@ -162,6 +163,7 @@ int WINAPI WinMain(HINSTANCE hInstance,
 			if (theInputMgr->isKeyDown(VK_SPACE))
 			{
 				theAsteroids.clear();
+				aLeft = 5;
 				for (int astro = 0; astro < 5; astro++)
 				{
 					theAsteroids.push_back(new cAsteroid);
@@ -191,8 +193,9 @@ int WINAPI WinMain(HINSTANCE hInstance,
 					mciSendString("close explosion", NULL, 0, 0);
 					mciSendString("open Audio/explosion2.wav alias explosion", NULL, 0, 0);
 					mciSendString("play explosion", NULL, 0, 0);
+					aLeft--;
 
-					if (asteroidIterator == theAsteroids.end())
+					if (aLeft == 0)
 					{
 						cout << "end Scene" << endl;
 						end = true;
