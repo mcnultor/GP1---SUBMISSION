@@ -113,7 +113,7 @@ int WINAPI WinMain(HINSTANCE hInstance,
 		theAsteroids[astro]->setMdlRadius();
 	}
 
-
+	//draw the background
 	cTexture textureBkgd;
 	textureBkgd.createTexture("Images\\starscape1024x768.png");
 	cBkGround spriteBkgd;
@@ -121,6 +121,7 @@ int WINAPI WinMain(HINSTANCE hInstance,
 	spriteBkgd.setTexture(textureBkgd.getTexture());
 	spriteBkgd.setTextureDimensions(textureBkgd.getTWidth(), textureBkgd.getTHeight());
 
+	//draw the rocket
 	cTexture rocketTxt;
 	rocketTxt.createTexture("Images\\rocketSprite.png");
 	cRocket rocketSprite;
@@ -137,6 +138,7 @@ int WINAPI WinMain(HINSTANCE hInstance,
 	bool end = false;
 	int aLeft = 5;
 
+	//draw the end title screen
 	cTexture endBkTexture = cTexture("Images\\endScreen.png");
 	cBkGround endBk;
 	endBk.setSpritePos(glm::vec2(0.0f, 0.0f));
@@ -188,6 +190,7 @@ int WINAPI WinMain(HINSTANCE hInstance,
 			{
 				if ((*asteroidIterator)->isActive() == false)
 				{
+					//play the explosion noise
 					asteroidIterator = theAsteroids.erase(asteroidIterator);
 					mciSendString("stop explosion", NULL, 0, 0);
 					mciSendString("close explosion", NULL, 0, 0);

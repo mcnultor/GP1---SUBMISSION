@@ -12,6 +12,8 @@ void cAsteroid::render()
 
 	glPushMatrix();
 
+
+	//set the asteroids
 	glTranslatef(spritePos2D.x, spritePos2D.y, 0.0f);
 	glRotatef(spriteRotation, 0.0f, 0.0f, 1.0f);
 	glScalef(spriteScaling.x, spriteScaling.y, 1.0f);

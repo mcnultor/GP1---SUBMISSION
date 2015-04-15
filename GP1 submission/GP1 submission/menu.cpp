@@ -9,6 +9,7 @@ static int value = 1;
 
 GLint texture1;
 
+//create our main menu screen
 void menu(int num)
 {
 	if (num == 0)
@@ -23,6 +24,8 @@ void menu(int num)
 	}
 	glutPostRedisplay();
 }
+
+//allow the right click menu
 void createMenu(void){
 	submenu_id = glutCreateMenu(menu);
 	    menu_id = glutCreateMenu(menu);
@@ -75,6 +78,8 @@ void display(void){
 	}
 	glFlush();
 }
+
+//create the window and apply the texture
 int main(int argc, char **argv){
 	glutInit(&argc, argv);
 	glutInitDisplayMode(GLUT_RGBA | GLUT_SINGLE);
@@ -86,6 +91,7 @@ int main(int argc, char **argv){
 
 	texture1 = textureBkgd.getTexture();
 
+	//play the background music
 	mciSendString("open Audio/Space_Coast.mp3 type mpegvideo alias music", NULL, 0, 0);
 	mciSendString("play music repeat", NULL, 0, 0);
 
